@@ -8,7 +8,7 @@
 import 'package:flutter_app/model/member.dart';
 
 class AppController {
-  // Encapsulate a simple list of members objects
+  // Encapsulate a simple list of member objects
   List<Member> members = [
     Member(
         imageName: 'Anele',
