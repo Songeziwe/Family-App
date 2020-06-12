@@ -27,11 +27,14 @@ class DescriptionHeader extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8.0),
                 ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/${member.imageName}.jpg',
-                    fit: BoxFit.cover,
+                child: Hero(
+                  tag: member.imageTag,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/${member.imageName}.jpg',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),

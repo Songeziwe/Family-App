@@ -24,10 +24,13 @@ class CardsContainer extends StatelessWidget {
                       right: 8.0,
                     ),
                     child: ListTile(
-                      leading: ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                            'assets/images/${member.imageName}.jpg'),
+                      leading: Hero(
+                        tag: member.imageTag,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(8.0),
+                          child: Image.asset(
+                              'assets/images/${member.imageName}.jpg'),
+                        ),
                       ),
                       title: Text(member.fullname),
                       subtitle: Text(member.profession),

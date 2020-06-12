@@ -19,6 +19,14 @@ class OverviewScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        backgroundColor: Colors.pinkAccent,
+        tooltip: 'Add member',
+        onPressed: () {
+          print('Add member');
+        },
+      ),
     );
   }
 }
